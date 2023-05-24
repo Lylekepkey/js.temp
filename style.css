@@ -36,7 +36,7 @@ h1 {
     letter-spacing: 1px;
 }
 
-#celsius, #fahrenheit, #kelvin {
+#celsius, #fahrenheit{
     align-items: center;
     display: flex;
     justify-content: center;
