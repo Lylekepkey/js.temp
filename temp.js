@@ -1,8 +1,8 @@
-let celsiusInput = document.querySelector('#celsius > input')
-let fahrenheitInput = document.querySelector('#fahrenheit > input')
-let kelvinInput = document.querySelector('#kelvin > input')
+const celsiusInput = document.querySelector('#celsius > input')
+const fahrenheitInput = document.querySelector('#fahrenheit > input')
+const kelvinInput = document.querySelector('#kelvin > input')
 
-let btn = document.querySelector('.clear button')
+const btn = document.querySelector('.clear button')
 
 function roundNumber(number) {
     return Math.round(number*100)/100
@@ -11,9 +11,9 @@ function roundNumber(number) {
 
 // celsius to fah and kel
 celsiusInput.addEventListener('input', function() {
-    let celsius = parseFloat(celsiusInput.value)
-    let fahrenheit = (celsius*(9/5)) + 32
-    let kelvin = celsius + 273.15
+    const celsius = parseFloat(celsiusInput.value)
+    const fahrenheit = (celsius*(9/5)) + 32
+    const kelvin = celsius + 273.15
 
     fahrenheitInput.value = roundNumber(fahrenheit)
     kelvinInput.value = roundNumber(kelvin)
@@ -22,9 +22,9 @@ celsiusInput.addEventListener('input', function() {
 
 // fahrenheit to cel and kel
 fahrenheitInput.addEventListener('input', function() {
-    let fahrenheit = parseFloat(fahrenheitInput.value)
-    let celsius = (fahrenheit - 32) * (5/9)
-    let kelvin = (fahrenheit - 32) * (5/9) + 273.15
+    const fahrenheit = parseFloat(fahrenheitInput.value)
+    const celsius = (fahrenheit - 32) * (5/9)
+    const kelvin = (fahrenheit - 32) * (5/9) + 273.15
 
     celsiusInput.value = roundNumber(celsius)
     kelvinInput.value = roundNumber(kelvin)
@@ -33,9 +33,9 @@ fahrenheitInput.addEventListener('input', function() {
 
 // kelvin to cel and fah
 // kelvinInput.addEventListener('input', function() {
-//     let kelvin = parseFloat(kelvinInput.value)
-//     let celsius = kelvin - 273.15
-//     let fahrenheit = (kelvin - 273.15) *(9/5) + 32
+//     const kelvin = parseFloat(kelvinInput.value)
+//     const celsius = kelvin - 273.15
+//     const fahrenheit = (kelvin - 273.15) *(9/5) + 32
 
 //     celsiusInput.value = roundNumber(celsius)
 //     fahrenheitInput.value = roundNumber(fahrenheit)
