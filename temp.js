@@ -32,14 +32,14 @@ fahrenheitInput.addEventListener('input', function() {
 
 
 // kelvin to cel and fah
-kelvinInput.addEventListener('input', function() {
-    let kelvin = parseFloat(kelvinInput.value)
-    let celsius = kelvin - 273.15
-    let fahrenheit = (kelvin - 273.15) *(9/5) + 32
+// kelvinInput.addEventListener('input', function() {
+//     let kelvin = parseFloat(kelvinInput.value)
+//     let celsius = kelvin - 273.15
+//     let fahrenheit = (kelvin - 273.15) *(9/5) + 32
 
-    celsiusInput.value = roundNumber(celsius)
-    fahrenheitInput.value = roundNumber(fahrenheit)
-})
+//     celsiusInput.value = roundNumber(celsius)
+//     fahrenheitInput.value = roundNumber(fahrenheit)
+// })
 
 
 // clear 
