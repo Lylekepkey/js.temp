@@ -9,7 +9,7 @@ function roundNumber(number) {
 }
 
 
-// celsius to fah and kel
+// celsius to fah 
 celsiusInput.addEventListener('input', function() {
     const celsius = parseFloat(celsiusInput.value)
     const fahrenheit = (celsius*(9/5)) + 32
@@ -18,7 +18,7 @@ celsiusInput.addEventListener('input', function() {
 })
 
 
-// fahrenheit to cel and kel
+// fahrenheit to cel 
 fahrenheitInput.addEventListener('input', function() {
     const fahrenheit = parseFloat(fahrenheitInput.value)
     const celsius = (fahrenheit - 32) * (5/9)
