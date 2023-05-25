@@ -40,24 +40,7 @@ h1 {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
-}
-
-input {
-    border: none;
-    border-radius: 8px 0 0 8px;
-    flex: 5;
-    font-size: 25px;
-    height: 50px;
-    outline: none;
-    text-align: center;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance:none;
-}
-input {
-    --moz-appearance: textfield;
+    margin-top: 50px;
 }
 
 
@@ -65,16 +48,15 @@ input {
     background: #0033;
     border-radius: 0 8px 8px 0;
     color: wheat;
-    flex: 1;
     font-size: 25px;
     height: 50px;
     line-height: 50px;
-    padding: 0 5px;
+    padding: 0 10px;
     text-align: center;
 }
 
 .clear {
-    margin-top: 25px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -84,10 +66,23 @@ input {
     color: wheat;
     cursor: pointer;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 900;
     outline: none;
     padding: 5px 10px;
 }
 .clear button:hover {
     background-color: #000;
+}
+
+input {
+    border: none;
+    border-radius: 10px 0 0 10px;
+    flex: 5;
+    font-size: 25px;
+    height: 50px;
+    outline: none;
+    text-align: center;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance:none;
 }
