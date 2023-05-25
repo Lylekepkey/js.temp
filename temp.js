@@ -31,6 +31,5 @@ fahrenheitInput.addEventListener('input', function() {
 btn.addEventListener('click', () => {
     celsiusInput.value = ""
     fahrenheitInput.value = ""
-    kelvinInput.value = ""
 })
 
